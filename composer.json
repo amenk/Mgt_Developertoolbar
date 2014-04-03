@@ -1,11 +1,23 @@
 {
-    "name": "mgt/mgt_developertoolbar",
+    "name": "mgt/developertoolbar",
     "license": "proprietary",
     "type": "magento-module",
     "description": "Developer toolbar",
     "homepage": "https://github.com/mgtcommerce/Mgt_Developertoolbar",
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra":{
+        "map":[
+          ["htdocs/app/code/community/Mgt/DeveloperToolbar", "app/code/community/Mgt/DeveloperToolbar"],
+          ["htdocs/app/design/adminhtml/default/default/layout/mgt_developertoolbar.xml", "app/design/adminhtml/default/default/layout/mgt_developertoolbar.xml"],
+          ["htdocs/app/design/adminhtml/default/default/template/mgt_developertoolbar", "app/design/adminhtml/default/default/template/mgt_developertoolbar"],
+          ["htdocs/app/design/frontend/default/default/layout/mgt_developertoolbar.xml", "app/design/frontend/default/default/layout/mgt_developertoolbar.xml"],
+          ["htdocs/app/design/frontend/default/default/template/mgt_developertoolbar", "app/design/frontend/default/default/template/mgt_developertoolbar"],
+          ["htdocs/app/etc/modules/Mgt_DeveloperToolbar.xml", "app/etc/modules/Mgt_DeveloperToolbar.xml"],
+          ["htdocs/js/mgt_developertoolbar", "js/adminhtml/default/default/mgt_developertoolbar"],
+          ["htdocs/media/mgt_developertoolbar", "media/adminhtml/default/default/mgt_developertoolbar"]
+        ]
     },
     "authors":[
         {
